@@ -523,9 +523,7 @@ function crearObjetivo() {
         homeAddTarget.style.display = "none";
     }
 
-    // Ajustar altura contenedor y background
-    homeGreetingContainer.style.height = `${homeGreetingContainer.offsetHeight + step}px`;
-    homeGreetingbg.style.height = `${homeGreetingbg.offsetHeight + step}px`;
+
 }
 
 homeAddTarget.addEventListener("click", crearObjetivo);
@@ -1463,6 +1461,7 @@ flagsElement.addEventListener("click", (e) => {
 window.addEventListener("resize",()=>{
     document.body.style.width = window.innerWidth + "px";
 })
+
 
 
 
