@@ -1,0 +1,30 @@
+{ 
+  "nav": {
+    "inicio": "Home",
+    "objetivos": "My goals",
+    "registro": "Log expenses/income",
+    "estadisticas": "Statistics",
+    "configuracion": "Settings"
+  },
+  "hero": {
+    "title": "With <span>Remember</span>, saving money has never been easier.",
+    "p": "Learn to take control of your money by managing your income and expenses. Today is the first step.",
+    "button": "Start now"
+  },
+  "setup": {
+    "h3": "Let's set up your goals!",
+    "p": "You will answer a few questions so we can tailor the experience to your specific goals.",
+    "button": "Let's begin"
+  },
+  "home": {
+    "title": "Home",
+    "greeting": "Hi",
+    "targetH4": "Goal overview",
+    "targetP": "Congrats, you've taken the first step — how about setting a new goal?",
+    "targetEdit": "(Edit goal)",
+    "targetAdd": "Add new goal",
+    "allMoney": "Your money",
+    "registerH4": "Expense/income log",
+    "registerP": "Whenever you make a transaction, record it here"
+  }
+}

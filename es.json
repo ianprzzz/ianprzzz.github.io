@@ -1,0 +1,31 @@
+{
+    "nav": {
+      "inicio": "Inicio",
+      "objetivos": "Mis objetivos",
+      "registro": "Registrar gastos/ingresos",
+      "estadisticas": "Estadísticas",
+      "configuracion": "Configuración"
+    },
+    "hero": {
+      "title": "Con <span>Remember</span> ahorrar dinero nunca había sido tan fácil.",
+      "p": "Aprende a tomar el control de tu dinero, gestionando tus ingresos y gastos. Hoy es el primer paso.",
+      "button": "Empieza ya"
+    },
+    "setup": {
+      "h3": "¡Configuremos tus objetivos!",
+      "p": "Responderás algunas preguntas para personalizar la experiencia según tus metas.",
+      "button": "Empecemos"
+    },
+    "home": {
+      "title": "Inicio",
+      "greeting": "Hola",
+      "targetH4": "Resumen de objetivos",
+      "targetP": "Felicidades, has dado el primer paso — ¿qué tal si estableces un nuevo objetivo?",
+      "targetEdit": "(Editar objetivo)",
+      "targetAdd": "Agregar nuevo objetivo",
+      "allMoney": "Tu dinero",
+      "registerH4": "Registro de gastos/ingresos",
+      "registerP": "Cada vez que hagas una transacción, regístrala aquí"
+    }
+  }
+
