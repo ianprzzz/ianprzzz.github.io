@@ -1427,7 +1427,7 @@ const textsToChange = document.querySelectorAll("[data-section]");
 
 const changeLanguage = async (language) => {
   // Carga el JSON con los textos para el idioma seleccionado
-  const requestJson = await fetch(`./languages/${language}.json`);
+  const requestJson = await fetch(`./${language}.json`);
   const texts = await requestJson.json();
 
   // Para cada elemento que debe cambiar su texto...
@@ -1451,6 +1451,12 @@ flagsElement.addEventListener("click", (e) => {
   }
 });
 
+
+
+
+
+
+//Funciona bien los objetivos con all money pero no con registro de gastos y poner lo de q si tengo 10 euros y pongo 20 q te diga q solo puedes 10
 
 
 
