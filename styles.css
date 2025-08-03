@@ -102,7 +102,7 @@ nav{
 .flags__item img{
     display: block;
     cursor: pointer;
-    margin-inline: 0rem;
+    margin-inline: 0.25rem;
     filter:grayscale(100%);
     transition: filter .3s ease;
 }
@@ -1417,6 +1417,7 @@ body .home__modal {
   border: none;
   border-radius: 4px;
 }
+
 
 
 
