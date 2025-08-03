@@ -57,11 +57,12 @@ goSetup.forEach(btn => {
 
 function updateAllMoneyInput(value) {
   const moneyInput = document.querySelector(".home__allMoney-input");
+  const formatted = parseFloat(value).toFixed(2);
   if (moneyInput) {
-    moneyInput.value = parseFloat(value).toFixed(2);
-  } 
+    moneyInput.value = formatted;
+  }
+  localStorage.setItem("target-money-allMoney", formatted);
 }
-
 
 
 let currentStep = 0; // Paso actual del cuestionario
@@ -1030,7 +1031,6 @@ if (!error) {
   if (!isNaN(dineroActual)) {
     let nuevoDinero = dineroActual - totalGasto;
     if (nuevoDinero < 0) nuevoDinero = 0; // Evitar negativos
-    allMoneyInput.value = nuevoDinero.toFixed(2);
     updateAllMoneyInput(nuevoDinero);
   }
 
@@ -1454,6 +1454,6 @@ flagsElement.addEventListener("click", (e) => {
 
 
 
-
-
-//Funciona bien los objetivos con all money pero no con registro de gastos y poner lo de q si tengo 10 euros y pongo 20 q te diga q solo puedes 10
+window.addEventListener("resize",()=>{
+    document.body.style.width = window.innerWidth + "px";
+})
