@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remember</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Header: Logo, título, selector de idioma -->
+  <header>
+    <nav class="nav">
+      <div class="logo">
+        <img src="img/remember-without-background.png" alt="Logo Remember" class="logo-img" />
+      </div>
+
+      <!-- MENÚ con texto traducible -->
+      <div id="flags" class="flags">
+        <div class="flags__item" data-language="es">
+          <img src="img/es.svg" alt="bandera-de-españa" />
+        </div>
+        <div class="flags__item" data-language="en">
+          <img src="img/gb.svg" alt="bandera-de-reino-unido" />
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Modal de menú inicial en mobile first -->
+  <div class="menu-overlay hidden">
+    <ul class="menu-ul">
+      <li class="menu-item inicio">
+        <a href="#casa" data-section="nav" data-value="inicio">Inicio</a>
+      </li>
+      <li class="menu-item exportar">
+        <a href="#goals" data-section="nav" data-value="objetivos">Mis objetivos</a>
+      </li>
+      <li class="menu-item registro">
+        <a href="#register" data-section="nav" data-value="registro">Registrar gastos/ingresos</a>
+      </li>
+      <li class="menu-item estadisticas">
+        <a href="#grafics" data-section="nav" data-value="estadisticas">Estadísticas</a>
+      </li>
+      <li class="menu-item configuracion">
+        <a href="#setup" data-section="nav" data-value="configuracion">Configuración</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <main>
+    <aside class="menu-aside">
+      <button class="button-menu">
+        <span class="icon-flip">
+          <span class="material-symbols-outlined front">chevron_right</span>
+        </span>
+      </button>
+    </aside>
+
+    <!-- Resumen mensual -->
+    <section id="casa" class="hero">
+      <div class="hero-content">
+        <div class="text-content">
+          <h1 class="hero-title" data-section="hero" data-value="title">
+            Con <span>Remember</span> ahorrar dinero nunca había sido tan fácil.
+          </h1>
+          <p class="hero-p" data-section="hero" data-value="p">
+            Aprende a tomar el control de tu dinero, gestionando tus ingresos y gastos. Hoy es el primer paso.
+          </p>
+          <div class="button-hero-container">
+            <button class="button-hero" data-section="hero" data-value="button">Empieza ya</button>
+            <span class="material-symbols-outlined arrow-right">arrow_right_alt</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETUP -->
+    <section class="setup hidden" id="setup">
+      <div class="setup-content">
+        <h3 class="setup-h3" data-section="setup" data-value="h3">¡Configuremos tus objetivos!</h3>
+        <p class="setup-p" data-section="setup" data-value="p">
+          Contestarás a unas preguntas para adaptarnos a tus objetivos especificos.
+        </p>
+        <button class="button-test" data-section="setup" data-value="button">Empecemos</button>
+      </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="goals" class="home">
+      <div class="home__title">
+        <p class="home__title-text" data-section="home" data-value="title">Inicio</p>
+      </div>
+      <div class="home__greeting-name-container">
+        <div class="home__greeting-greeting">
+        <p data-section="home" data-value="greeting">
+          Hola
+        </p>
+        <span class="home__greeting-name"></span>
+        </div>
+
+      </div>
+      <div class="home__greeting-background">
+        <div class="home__greeting-container">
+          <h4 class="home__target-h4" data-section="home" data-value="targetH4">Visualización de objetivos</h4>
+          <p class="home__greeting" data-section="home" data-value="targetP">
+            Felicidades <span class="home_greeting-name"></span>, has dado el primer paso, ¿qué tal si establecemos alguna meta?
+          </p>
+          <div class="home__target-container">
+            <h4 class="home__target-title" data-id="0" data-section="home" data-value="targetEdit">(Edita el objetivo)</h4>
+            <span class="material-symbols-outlined home__target-bin">delete</span>
+            <div class="home__target-bar">
+              <div class="home__target-fill"></div>
+            </div>
+            <div class="home__target-span-container">
+              <span class="material-symbols-outlined home__target-add-money">add</span>
+              <span class="material-symbols-outlined home__target-remove-money">remove</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="home__add-target" data-section="home" data-value="targetAdd">Añadir nuevo objetivo</button>
+
+
+
+      <div class="home__modal-bg hidden">
+        <div class="home__modal">
+            <h3>Introduce la cantidad total para el objetivo</h3>
+            <input type="number" class="home__modal-input" id="input-meta" min="1" placeholder="Cantidad total €">
+            <button class="home__modal-button" id="btn-guardar-meta">Guardar</button>
+        </div>
+      </div>
+
+
+
+      <div class="home__allMoney-bg">
+        <div class="home__allMoney">
+          <h4 class="home__allMoney-h4" data-id="allMoney" data-section="home" data-value="allMoney">Tú dinero</h4>
+          <input
+            readonly
+            class="home__allMoney-input"
+            type="number"
+            name="allMoney"
+            min="0"
+            step="0.01"
+            required
+          />
+          <div class="home__allMoney-span-container">
+            <span class="material-symbols-outlined home__target-add-money">add</span>
+            <span class="material-symbols-outlined home__target-remove-money">remove</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="register" class="home__register-background">
+        <div class="home__register-container">
+          <h4 class="home__register-h4" data-section="home" data-value="registerH4">Registro de gastos</h4>
+          <p class="home__register-p" data-section="home" data-value="registerP">
+            Cada vez que tengas algún movimiento anótalo en esta sección
+          </p>
+          <div class="home__register-button-container">
+            <span class="material-symbols-outlined home__register-add">add</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gráficas (circular y barras) -->
+    <section class="grafics" id="grafics">
+      <canvas id="canvas"></canvas>
+    </section>
+  </main>
+
+  <!-- Footer con accesos rápidos o información -->
+  <!-- <footer>
+    <button>+ Añadir</button>
+    <button>Historial</button>
+    <button>Exportar JSON</button>
+  </footer> -->
+
+  <script src="script.js"></script>
+  <script src="chart.js"></script>
+</body>
+</html>
