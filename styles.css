@@ -6,9 +6,9 @@
     border: none;
     user-select: none;
     scroll-behavior: smooth;
+    
+    overflow-x: hidden;
 }
-
-
 
 :root {
   --verde-principal: #2ec4b6;       /* Color para ingresos, botones positivos */
@@ -36,7 +36,6 @@ html, body{
     background-color: var(--negro-claro);
     height: 300dvh;
     margin: 0;
-    overflow-x: hidden;
 }
 
 body::before {
@@ -1395,6 +1394,7 @@ body .home__modal {
   border: none;
   border-radius: 4px;
 }
+
 
 
 
