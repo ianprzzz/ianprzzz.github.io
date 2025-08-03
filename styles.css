@@ -22,9 +22,7 @@
 }
 
 
-html{
-    overflow-x: hidden;
-}
+
 
 input{
     max-width: 100%;
@@ -32,12 +30,13 @@ input{
 }
 
 
-html, body{
+ body{
     font-family: Inter;
     font-weight: 600; /* o un valor más alto para más grosor */
     background-color: var(--negro-claro);
     height: 300dvh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -1396,6 +1395,7 @@ body .home__modal {
   border: none;
   border-radius: 4px;
 }
+
 
 
 
