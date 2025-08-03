@@ -149,15 +149,6 @@ nav{
 
 
 
-
-
-
-
-
-
-
-
-
 .menu-overlay{
     display: flex;
     flex-direction: column;
@@ -176,12 +167,6 @@ nav{
     transform: translateX(-100%);
 }
 
-
-
-
-
-
-
 .icon-flip {
     display: inline-block;
     transition: transform 0.4s ease;
@@ -191,10 +176,6 @@ nav{
 .icon-flip.rotated {
     transform: rotateY(180deg) translateX(-50%);
 }
-
-
-
-
 
 
 .menu-ul{
@@ -1419,6 +1400,7 @@ body .home__modal {
   border: none;
   border-radius: 4px;
 }
+
 
 
 
