@@ -1469,8 +1469,3 @@ window.addEventListener("resize",()=>{
 
 
 
-[...document.querySelectorAll('*')].forEach(el => {
-  if (el.scrollWidth > document.documentElement.clientWidth) {
-    console.log('⚠ Overflow encontrado en:', el);
-  }
-});
