@@ -93,16 +93,19 @@ nav{
 
 
 .flags__item{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    width: 40px;
+    heigh: 40px;
+    border: 2px solid red;
 }
 
 
 .flags__item img{
     display: block;
     cursor: pointer;
-    margin-inline: 0.25rem;
+    margin-inline: 0.75rem;
     filter:grayscale(100%);
     transition: filter .3s ease;
 }
@@ -1417,6 +1420,7 @@ body .home__modal {
   border: none;
   border-radius: 4px;
 }
+
 
 
 
