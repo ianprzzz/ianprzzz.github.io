@@ -100,7 +100,7 @@ nav{
     margin-inline: 0.75rem;
     filter:grayscale(100%);
     transition: filter .3s ease;
-    width: 20px;
+    width: 40px;
     height: 10px;
 }
 
@@ -1395,6 +1395,7 @@ body .home__modal {
   border: none;
   border-radius: 4px;
 }
+
 
 
 
